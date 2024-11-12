@@ -1,0 +1,16 @@
+/* App.css */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Coloca tarjetas en columnas de al menos 200px */
+    gap: 20px;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px; /* Define un ancho máximo para que no se extienda en pantallas muy grandes */
+  }
+  
+  @media (max-width: 600px) {
+    .card-container {
+      grid-template-columns: 1fr; /* En pantallas pequeñas, una sola columna */
+    }
+  }
+  
